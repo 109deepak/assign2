@@ -16,6 +16,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+
+
 public class ManageBookingsGUI implements ActionListener {
 
 	JFrame jfMain = new JFrame(" Federation Animal Clinic ");
@@ -88,6 +90,8 @@ public class ManageBookingsGUI implements ActionListener {
 			//new BookingGUI(myClinic);
 		if (e.getSource() == jbQuitBooking)
 			this.jfMain.dispose();
+		else if (e.getSource()==jbMakeBooking)
+			new MakeAppointmentGUI(myClinic);
 		
 	}
 
