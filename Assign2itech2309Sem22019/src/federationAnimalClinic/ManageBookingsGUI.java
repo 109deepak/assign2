@@ -34,6 +34,7 @@ public class ManageBookingsGUI implements ActionListener {
 	 
 	}
 	
+	
 	public JPanel createTopPanel() {
 		JPanel topPanel = new JPanel();
 		topPanel.setLayout(new BorderLayout(10,10));
@@ -90,9 +91,12 @@ public class ManageBookingsGUI implements ActionListener {
 			//new BookingGUI(myClinic);
 		if (e.getSource() == jbQuitBooking)
 			this.jfMain.dispose();
-		else if (e.getSource()==jbMakeBooking)
-			new MakeAppointmentGUI(myClinic);
+		else if (e.getSource()==jbMakeBooking){
+			Facade f = new Facade();
+		f.jpanel();
 		
+		f.action();
+		}
 	}
 
 }
