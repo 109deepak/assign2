@@ -37,7 +37,7 @@ public class Singleton implements ActionListener {
 	ArrayList<String> Veterinarian = new ArrayList<String>();
 	JComboBox<String> jcbAnimals, jcbVeterinarians, jcbRoom, jcbTypeofAppointments;
 
-	private Singleton(Clinic c) {
+	Singleton(Clinic c) {
 		setupData();
 		jfMain.add(createTopPanel(), BorderLayout.NORTH);
 		jfMain.add(createMainPanel(), BorderLayout.CENTER);
